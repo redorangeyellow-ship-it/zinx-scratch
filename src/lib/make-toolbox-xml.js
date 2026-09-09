@@ -29,14 +29,6 @@ const motion = function (isInitialSetup, isStage, targetId) {
                     <field name="NUM">10</field>
                 </shadow>
             </value>
-        </block>
-        <block type="motion_moveupdownsteps">
-            <value name="STEPS">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
         <block type="motion_turnright">
             <value name="DEGREES">
                 <shadow type="math_number">
@@ -70,18 +62,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 </shadow>
             </value>
         </block>
-        <block type="motion_changebyxy">
-            <value name="DX">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-            <value name="DY">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
+
         <block type="motion_glideto" id="motion_glideto">
             <value name="SECS">
                 <shadow type="math_number">
@@ -123,20 +104,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 <shadow type="motion_pointtowards_menu">
                 </shadow>
             </value>
-        </block>
-        <block type="motion_pointtowardsxy">
-            <value name="X">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-            <value name="Y">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_turnaround"/>
+        </bloc!
         ${blockSeparator}
         <block type="motion_changexby">
             <value name="DX">
@@ -168,14 +136,9 @@ const motion = function (isInitialSetup, isStage, targetId) {
         </block>
         ${blockSeparator}
         <block type="motion_ifonedgebounce"/>
-        <block type="motion_ifonspritebounce">
-            <value name="SPRITE">
-                <shadow type="motion_pointtowards_menu"></shadow>
-            </value>
-        </block>
+        
         ${blockSeparator}
         <block type="motion_setrotationstyle"/>
-        <block type="motion_move_sprite_to_scene_side"/>
         ${blockSeparator}
         <block id="${targetId}_xposition" type="motion_xposition"/>
         <block id="${targetId}_yposition" type="motion_yposition"/>
@@ -241,8 +204,6 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
                 </shadow>
             </value>
         </block>
-        <block type="looks_stoptalking"/>
-        ${blockSeparator}
         <block type="looks_setFont">
             <value name="font">
                 <shadow type="text">
@@ -355,8 +316,6 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
                     </shadow>
                 </value>
             </block>
-            <block id="${targetId}_stretchGetX" type="looks_stretchGetX"></block>
-            <block id="${targetId}_stretchGetY" type="looks_stretchGetY"></block>
         `}
         ${blockSeparator}
         <block type="looks_changeeffectby">
@@ -432,6 +391,8 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
             <block id="${targetId}_costumenumbername" type="looks_costumenumbername"/>
             <block id="backdropnumbername" type="looks_backdropnumbername"/>
             <block id="${targetId}_size" type="looks_size"/>
+                        <block id="${targetId}_stretchGetX" type="looks_stretchGetX"></block>
+            <block id="${targetId}_stretchGetY" type="looks_stretchGetY"></block>
         `}
         ${categorySeparator}
     </category>
@@ -448,19 +409,7 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
                 </shadow>
             </value>
         </block>
-        <block id="${targetId}_sound_play_at_seconds_until_done" type="sound_play_at_seconds_until_done">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">5</field>
-                </shadow>
-            </value>
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu">
-                    <field name="SOUND_MENU">${soundName}</field>
-                </shadow>
-            </value>
-        </block>
-        ${blockSeparator}
+    
         <block id="${targetId}_sound_play" type="sound_play">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu">
@@ -468,18 +417,7 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
                 </shadow>
             </value>
         </block>
-        <block id="${targetId}_sound_play_at_seconds" type="sound_play_at_seconds">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">5</field>
-                </shadow>
-            </value>
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu">
-                    <field name="SOUND_MENU">${soundName}</field>
-                </shadow>
-            </value>
-        </block>
+       
         <block id="${targetId}_sound_stop" type="sound_stop">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu">
@@ -489,20 +427,6 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
         </block>
         <block type="sound_playallsounds"/>
         <block type="sound_stopallsounds"/>
-        ${blockSeparator}
-        <block id="${targetId}_sound_set_stop_fadeout_to" type="sound_set_stop_fadeout_to">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu">
-                    <field name="SOUND_MENU">${soundName}</field>
-                </shadow>
-            </value>
-        </block>
-        ${blockSeparator}
         <block id="${targetId}_sound_isSoundPlaying" type="sound_isSoundPlaying">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu">
@@ -510,6 +434,7 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
                 </shadow>
             </value>
         </block>
+                ${blockSeparator}
         <block id="${targetId}_sound_getLength" type="sound_getLength">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu">
@@ -559,15 +484,12 @@ const events = function (isInitialSetup, isStage) {
     return `
     <category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">
         <block type="event_whenflagclicked"/>
-        <block type="event_whenstopclicked"/>
-        ${blockSeparator}
         <block type="event_always"></block>
         <block type="event_whenanything">
             <value name="ANYTHING"></value>
         </block>
         ${blockSeparator}
         <block type="event_whenkeypressed"></block>
-        <block type="event_whenkeyhit"></block>
         <block type="event_whenmousescrolled"></block>
         ${isStage ? `
             <block type="event_whenstageclicked"/>
@@ -628,6 +550,7 @@ const control = function (isInitialSetup, isStage) {
             </value>
         </block>
         <block id="forever" type="control_forever"/>
+        ${blockSeparator}
         <block id="for_each" type="control_for_each">
             <value name="VALUE">
                 <shadow type="math_whole_number">
@@ -635,63 +558,22 @@ const control = function (isInitialSetup, isStage) {
                 </shadow>
             </value>
         </block>
-        <block type="control_exitLoop"/>
-        <block type="control_continueLoop"/>
-        ${blockSeparator}
         <block type="control_switch"/>
-        <block type="control_switch_default"/>
         <block type="control_exitCase"/>
-        <block type="control_case_next">
-            <value name="CONDITION">
-                <shadow type="text">
-                    <field name="TEXT">ello</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="control_case">
-            <value name="CONDITION">
-                <shadow type="text">
-                    <field name="TEXT">ello</field>
-                </shadow>
-            </value>
-        </block>
-        ${blockSeparator}
         <block type="control_if"/>
         <block type="control_if_else"/>
         <block id="wait_until" type="control_wait_until"/>
         <block id="repeat_until" type="control_repeat_until"/>
         <block id="while" type="control_while"/>
-        <block type="control_if_return_else_return">
-            <value name="boolean"></value>
-            <value name="TEXT1">
-                <shadow type="text">
-                    <field name="TEXT">foo</field>
-                </shadow>
-            </value>
-            <value name="TEXT2">
-                <shadow type="text">
-                    <field name="TEXT">bar</field>
-                </shadow>
-            </value>
-        </block>
-        ${blockSeparator}
-        <block type="control_all_at_once"/>
+    
         <block type="control_run_as_sprite">
             <value name="RUN_AS_OPTION">
                 <shadow type="control_run_as_sprite_menu"/>
             </value>
         </block>
-        ${blockSeparator}
-        <block type="control_try_catch"/>
-        <block type="control_throw_error">
-            <value name="ERROR">
-                <shadow type="text">
-                    <field name="TEXT">Hello!</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="control_error"/>
-        ${blockSeparator}
+
+
+
         <block type="control_backToGreenFlag"></block>
         <block type="control_stop_sprite">
             <value name="STOP_OPTION">
@@ -724,7 +606,6 @@ const control = function (isInitialSetup, isStage) {
                 </value>
             </block>
             <block type="control_delete_this_clone"/>
-            <block type="control_is_clone"/>
         `}
         ${LazyScratchBlocks.isNameUrMom() ? '<block type="your_mom"/>' : ''}
         ${categorySeparator}
@@ -744,22 +625,7 @@ const sensing = function (isInitialSetup, isStage, targetId) {
                     <shadow type="sensing_touchingobjectmenu"/>
                 </value>
             </block>
-            <block type="sensing_objecttouchingobject">
-                <value name="FULLTOUCHINGOBJECTMENU">
-                    <shadow type="sensing_fulltouchingobjectmenu"/>
-                </value>
-                <value name="SPRITETOUCHINGOBJECTMENU">
-                    <shadow type="sensing_touchingobjectmenusprites"/>
-                </value>
-            </block>
-            <block type="sensing_objecttouchingclonesprite">
-                <value name="FULLTOUCHINGOBJECTMENU">
-                    <shadow type="sensing_fulltouchingobjectmenu"/>
-                </value>
-                <value name="SPRITETOUCHINGOBJECTMENU">
-                    <shadow type="sensing_touchingobjectmenusprites"/>
-                </value>
-            </block>
+       
             <block type="sensing_touchingcolor">
                 <value name="COLOR">
                     <shadow type="colour_picker"/>
@@ -772,8 +638,7 @@ const sensing = function (isInitialSetup, isStage, targetId) {
                 <value name="COLOR2">
                     <shadow type="colour_picker"/>
                 </value>
-            </block>
-            ${blockSeparator}
+            </block
             <block type="sensing_getxyoftouchingsprite">
                 <value name="SPRITE">
                     <shadow type="sensing_distancetomenu"/>
@@ -860,19 +725,12 @@ const sensing = function (isInitialSetup, isStage, targetId) {
                 <shadow type="sensing_keyoptions"/>
             </value>
         </block>
-        <block type="sensing_keyhit">
-            <value name="KEY_OPTION">
-                <shadow type="sensing_keyoptions"/>
-            </value>
-        </block>
         <block type="sensing_mousescrolling">
             <value name="SCROLL_OPTION">
                 <shadow type="sensing_scrolldirections"/>
             </value>
         </block>
-        ${blockSeparator}
         <block type="sensing_mousedown"/>
-        <block type="sensing_mouseclicked"/>
         <block type="sensing_mousex"/>
         <block type="sensing_mousey"/>
         ${blockSeparator}
@@ -887,7 +745,6 @@ const sensing = function (isInitialSetup, isStage, targetId) {
         ${isStage ? '' : `
             ${blockSeparator}
             <block type="sensing_setdragmode" id="sensing_setdragmode"></block>
-            <block id="${targetId}_getdragmode" type="sensing_getdragmode"></block>
             ${blockSeparator}
         `}
         ${blockSeparator}
@@ -917,28 +774,6 @@ const sensing = function (isInitialSetup, isStage, targetId) {
         <block type="sensing_dayssince2000"/>
         ${blockSeparator}
         <block type="sensing_mobile"></block>
-        <block type="sensing_fingerdown">
-            <value name="FINGER_OPTION">
-                <shadow id="sensing_fingeroptions" type="sensing_fingeroptions"/>
-            </value>
-        </block>
-        <block type="sensing_fingertapped">
-            <value name="FINGER_OPTION">
-                <shadow id="sensing_fingeroptions" type="sensing_fingeroptions"/>
-            </value>
-        </block>
-        <block type="sensing_fingerx">
-            <value name="FINGER_OPTION">
-                <shadow id="sensing_fingeroptions" type="sensing_fingeroptions"/>
-            </value>
-        </block>
-        <block type="sensing_fingery">
-            <value name="FINGER_OPTION">
-                <shadow id="sensing_fingeroptions" type="sensing_fingeroptions"/>
-            </value>
-        </block>
-        ${blockSeparator}
-        <button text="${helpManual}" callbackKey="OPEN_USERNAME_DOCS" />
         <block type="sensing_username"/>
         <block type="sensing_loggedin"/>
         ${categorySeparator}
@@ -1000,18 +835,7 @@ const operators = function (isInitialSetup) {
                 </shadow>
             </value>
         </block>
-        <block type="operator_power">
-            <value name="NUM1">
-                <shadow type="math_number">
-                    <field name="NUM"/>
-                </shadow>
-            </value>
-            <value name="NUM2">
-                <shadow type="math_number">
-                    <field name="NUM"/>
-                </shadow>
-            </value>
-        </block>
+    
         <block type="operator_advMathExpanded">
             <value name="ONE">
                 <shadow type="math_number">
@@ -1149,10 +973,10 @@ const operators = function (isInitialSetup) {
                     <field name="TEXT">50</field>
                 </shadow>
             </value>
-        </block>
-        ${blockSeparator}
+        </block
         <block type="operator_trueBoolean"></block>
         <block type="operator_falseBoolean"></block>
+        <block type="operator_randomBoolean"></block>
         ${blockSeparator}
         <block type="operator_and"/>
         <block type="operator_or"/>
@@ -1160,8 +984,6 @@ const operators = function (isInitialSetup) {
         ${blockSeparator}
         ${isInitialSetup ? '' : `
             <block type="operator_newLine"></block>
-            <block type="operator_tabCharacter"></block>
-            ${blockSeparator}
             <block type="operator_join">
                 <value name="STRING1">
                     <shadow type="text">
@@ -1174,24 +996,7 @@ const operators = function (isInitialSetup) {
                     </shadow>
                 </value>
             </block>
-            <block type="operator_join3">
-                <value name="STRING1">
-                    <shadow type="text">
-                        <field name="TEXT">${apple} </field>
-                    </shadow>
-                </value>
-                <value name="STRING2">
-                    <shadow type="text">
-                        <field name="TEXT">${banana} </field>
-                    </shadow>
-                </value>
-                <value name="STRING3">
-                    <shadow type="text">
-                        <field name="TEXT">pear</field>
-                    </shadow>
-                </value>
-            </block>
-            ${blockSeparator}
+        
             <block type="operator_indexOfTextInText">
                 <value name="TEXT1">
                     <shadow type="text">
@@ -1216,7 +1021,6 @@ const operators = function (isInitialSetup) {
                     </shadow>
                 </value>
             </block>
-            ${blockSeparator}
             <block type="operator_letter_of">
                 <value name="LETTER">
                     <shadow type="math_whole_number">
@@ -1229,7 +1033,7 @@ const operators = function (isInitialSetup) {
                     </shadow>
                 </value>
             </block>
-            <block type="operator_getLettersFromIndexToIndexInTextFixed">
+            <block type="operator_getLettersFromIndexToIndexInText">
                 <value name="INDEX1">
                     <shadow type="math_number">
                         <field name="NUM">2</field>
@@ -1252,14 +1056,13 @@ const operators = function (isInitialSetup) {
                         <field name="TEXT">${apple}</field>
                     </shadow>
                 </value>
-            </block>
-            ${blockSeparator}
+            </block>          
             <block type="operator_contains" id="operator_contains">
               <value name="STRING1">
                 <shadow type="text">
                   <field name="TEXT">${apple}</field>
                 </shadow>
-              </value>
+     </value>
               <value name="STRING2">
                 <shadow type="text">
                   <field name="TEXT">${letter}</field>
@@ -1278,7 +1081,6 @@ const operators = function (isInitialSetup) {
                 </shadow>
               </value>
             </block>
-            ${blockSeparator}
             <block type="operator_replaceAll">
                 <value name="text">
                     <shadow type="text">
@@ -1296,23 +1098,7 @@ const operators = function (isInitialSetup) {
                     </shadow>
                 </value>
             </block>
-            <block type="operator_replaceFirst">
-                <value name="text">
-                    <shadow type="text">
-                        <field name="TEXT">bar bar doo</field>
-                    </shadow>
-                </value>
-                <value name="term">
-                    <shadow type="text">
-                        <field name="TEXT">bar</field>
-                    </shadow>
-                </value>
-                <value name="res">
-                    <shadow type="text">
-                        <field name="TEXT">foo</field>
-                    </shadow>
-                </value>
-            </block>
+    
             <block type="operator_regexmatch">
                 <value name="text">
                     <shadow type="text">
@@ -1330,7 +1116,6 @@ const operators = function (isInitialSetup) {
                     </shadow>
                 </value>
             </block>
-            ${blockSeparator}
             <block type="operator_toUpperLowerCase">
                 <value name="TEXT">
                     <shadow type="text">
@@ -1372,13 +1157,6 @@ const operators = function (isInitialSetup) {
             <value name="ONE">
                 <shadow type="text">
                     <field name="TEXT">foo</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="operator_boolify">
-            <value name="ONE">
-                <shadow type="text">
-                    <field name="TEXT">true</field>
                 </shadow>
             </value>
         </block>
