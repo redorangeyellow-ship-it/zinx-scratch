@@ -344,15 +344,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Pen+',
-        extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/PenPlus.js',
-        tags: ['categoryexpansion', 'graphics'],
-        iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/PenPlus.svg',
-        description: 'An extension to the Pen category! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.',
-        featured: true,
-        extDeveloper: 'pinksheep2917'
-    },
-    {
         name: 'Sound Systems',
         extensionId: 'jgExtendedAudio',
         iconURL: jgExtendedAudioExtensionIcon,
@@ -369,94 +360,8 @@ const menuItems = [
         extDeveloper: 'SharkPool',
         featured: true
     },
-    {
-        name: 'Sound Waves',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Sound-Waves.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Sound-Waves.svg',
-        tags: ['penguinmod', 'noisemaker'],
-        description: 'Make sounds with oscillators!',
-        extDeveloper: 'SharkPool',
-        featured: true
-    },
-    {
-        name: 'Motion Expansion',
-        extensionId: 'pmMotionExpansion',
-        iconURL: pmMotionExpansionExtensionIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'More small motion blocks for movement or collision.',
-        featured: true,
-        credits: 'Some blocks from NexusKitten'
-    },
-    {
-        name: 'Events Expansion',
-        extensionId: 'pmEventsExpansion',
-        iconURL: pmEventsExpansionExtensionIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'More events for sending & receiving information, notifing specific sprites or better control when things should happen.',
-        featured: true,
-        credits: 'Some blocks from LilyMakesThings'
-    },
-    {
-        name: 'Controls Expansion',
-        extensionId: 'pmControlsExpansion',
-        iconURL: pmControlsExpansionExtensionIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'More control blocks for animations, complex systems or cleaner one-time use blocks.',
-        featured: true,
-        credits: '"new thread" by CubesterYT, CST1229, SharkPool'
-    },
-    {
-        name: 'Sensing Expansion',
-        extensionId: 'pmSensingExpansion',
-        iconURL: pmSensingExpansionExtensionIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: "More sensing blocks for specific use cases or interacting with the user's device.",
-        credits: 'Some blocks from SharkPool-SP',
-        featured: true
-    },
-    {
-        name: 'Operators Expansion',
-        extensionId: 'pmOperatorsExpansion',
-        iconURL: pmOperatorsExpansionExtensionIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'More operators like nand, nor, character code to character, reading multiple lined text line by line, etc.',
-        featured: true
-    },
-    {
-        name: 'My Blocks+',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/My-Blocks-Plus.js',
-        iconURL: sharkpoolMBPIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Create private or global custom blocks with custom inputs, colors, and more!',
-        extDeveloper: 'SharkPool, CST1229, 0znzw',
-        featured: true
-    },
-    {
-        name: 'Better Comments',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Better-Comments.js',
-        iconURL: sharkpoolBCIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Better Comments with Customization and Markdown support',
-        extDeveloper: 'SharkPool',
-        featured: true
-    },
-    {
-        name: 'JSON',
-        extensionId: 'jgJSON',
-        iconURL: jgJSONExtensionIcon,
-        tags: ['penguinmod', 'datamgmt'],
-        description: 'Blocks for handling JSON objects and Arrays.',
-        featured: true
-    },
-    {
-        name: 'Particle Engine',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Particle-Engine.js',
-        iconURL: sharkpoolPEIcon,
-        tags: ['penguinmod', 'graphics'],
-        description: 'Create powerful Particle Engines without Clones',
-        extDeveloper: 'SharkPool',
-        featured: true
-    },
+ 
+
     {
         name: 'Custom Styles',
         extensionId: 'shovelcss',
@@ -495,15 +400,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Tile Grids',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Tile-Grids.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Tile-Grids.svg',
-        tags: ['penguinmod'],
-        description: 'Place sprites on grids.',
-        extDeveloper: 'SharkPool-SP',
-        featured: true
-    },
-    {
         name: 'Canvas Effects',
         extensionId: 'theshovelcanvaseffects',
         iconURL: theshovelCanvasEffectsIcon,
@@ -513,16 +409,7 @@ const menuItems = [
         credits: 'SharkPool',
         featured: true
     },
-    {
-        name: 'Clones+',
-        extensionId: 'https://extensions.turbowarp.org/Lily/ClonesPlus.js',
-        tags: ['turbowarp', 'categoryexpansion'],
-        iconURL: 'https://extensions.turbowarp.org/images/Lily/ClonesPlus.svg',
-        insetIconURL: turbowarpIcon,
-        description: "Expansion of Scratch's clone features.",
-        featured: true,
-        twDeveloper: 'LilyMakesThings'
-    },
+
     {
         name: 'Skins',
         extensionId: 'https://extensions.turbowarp.org/Lily/Skins.js',
@@ -533,15 +420,7 @@ const menuItems = [
         featured: true,
         twDeveloper: 'LilyMakesThings'
     },
-    {
-        name: 'Multiple Timers',
-        extensionId: 'jgTimers',
-        iconURL: jgTimersExtensionIcon,
-        tags: ['penguinmod'],
-        description: 'Create different timers you can control seperately.',
-        eventSubmittor: 'Arrow',
-        featured: true
-    },
+
     {
         name: 'Temporary Variables',
         extensionId: 'tempVars',
@@ -551,16 +430,8 @@ const menuItems = [
         credits: 'LilyMakesThings',
         featured: true
     },
-    {
-        name: 'TurboWarp Temporary Variables',
-        extensionId: 'lmsTempVars2',
-        iconURL: lilyTempVariablesExtensionIcon,
-        tags: ['turbowarp'],
-        description: 'Create disposable runtime or thread variables.',
-        insetIconURL: turbowarpIcon,
-        credits: 'LilyMakesThings',
-        featured: true
-    },
+
+    
     {
         name: 'Runtime Modifications',
         extensionId: 'jgRuntime',
@@ -570,15 +441,7 @@ const menuItems = [
         credits: 'TheShovel, showierdata9978, SharkPool',
         featured: true
     },
-    {
-        name: 'Font Manager',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Font-Manager.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Font-Manager.svg',
-        tags: ['penguinmod', 'graphics'],
-        description: 'Manage, create, and delete fonts.',
-        credits: 'SharkPool, Ashimee',
-        featured: true
-    },
+
     {
         name: 'Storage',
         extensionId: 'jgStorage',
@@ -627,33 +490,7 @@ const menuItems = [
         extDeveloper: 'oc9x97',
         featured: true
     },
-    {
-        name: '3D Math',
-        extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/3DMath.js',
-        iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
-        tags: ['penguinmod', '3d', 'graphics'],
-        description: 'A handful of utilities for making your own sprite-based 3D engine.',
-        extDeveloper: 'pinksheep2917',
-        featured: true
-    },
-    {
-        name: 'Extra Mathematics',
-        extensionId: 'https://extensions.penguinmod.com/extensions/jwklong/mathematics.js',
-        iconURL: 'https://extensions.penguinmod.com/images/jwklong/mathematics.png',
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Complicated maths extension for nerds.',
-        extDeveloper: 'jwklong',
-        featured: true
-    },
-    {
-        name: 'Random Utilities',
-        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/random_utils.js',
-        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/randomutils.png',
-        tags: ['penguinmod'],
-        description: 'Many blocks related to generating random values, including seed-based number generation, true number generation, UUID\'s, random strings, etc.',
-        extDeveloper: 'G1nX',
-        featured: true
-    },
+
     {
         name: 'LZ Compress',
         extensionId: 'shovellzcompresss',
@@ -704,15 +541,6 @@ const menuItems = [
         iconURL: gsaColorUtilExtensionIcon,
         tags: ['penguinmod'],
         description: 'Converters for Hex, RGB, HSV and Decimal colors and other color related things.',
-        featured: true
-    },
-    {
-        name: 'All Menus',
-        extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
-        iconURL: 'https://extensions.penguinmod.com/images/Lily/AllMenus.svg',
-        tags: ['penguinmod'],
-        description: 'Every dropdown menu for each block, in one extension.',
-        extDeveloper: 'LilyMakesThings',
         featured: true
     },
     {
@@ -849,14 +677,6 @@ const menuItems = [
         iconURL: jgScratchAuthExtensionIcon,
         tags: ['penguinmod'],
         description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
-        featured: true
-    },
-    {
-        name: 'JavaScript',
-        extensionId: 'jgJavascript',
-        iconURL: jgJavascriptExtensionIcon,
-        tags: ['penguinmod', 'programminglanguage'],
-        description: 'Run your own custom code written in JavaScript!',
         featured: true
     },
     {
@@ -1067,39 +887,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'SharkPool\'s Extension Collection',
-        href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
-        extensionId: 'special_sharkpoolExtensionLibrary',
-        iconURL: sharkpoolGalleryIcon,
-        description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
-        credits: 'Listed in the site',
-        tags: ['library'],
-        featured: true
-    },
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: 'TurboBuilder',
-        href: 'https://turbobuilder.vercel.app/',
-        extensionId: 'special_turboBuilder',
-        iconURL: turboBuilderIcon,
-        description: 'Create your own amazing extensions using a scratch-based UI!',
-        credits: 'Started by JeremyGamer13, continued by jwklong',
-        tags: ['extcreate'],
-        featured: true,
-        disabled: !(IsLocal || IsLiveTests)
-    },
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: 'TurboBuilder - Dev Branch',
-        href: 'https://turbobuilder-dev.vercel.app/',
-        extensionId: 'special_turboBuilderDev',
-        iconURL: turboBuilderDevIcon,
-        description: 'Publicly available developer branch, with the latest features.',
-        credits: 'Started by JeremyGamer13, continued by jwklong',
-        tags: ['extcreate'],
-        featured: true
-    },
-    {
         // not really an extension, but it's easiest to present it as one
         name: (
             <FormattedMessage
@@ -1183,14 +970,7 @@ if (IsLocal || IsLiveTests) {
             description: 'Mainly sharing data between clones and the main sprite, but also some other small features. This has been replaced by the TurboWarp Clones+ extension.',
             featured: true
         },
-        {
-            name: 'Easy Save',
-            extensionId: 'jgEasySave',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'datamgmt'],
-            description: 'Save variables, lists and extra info to a file, then load those things back in.',
-            featured: true
-        },
+
         {
             name: (
                 <FormattedMessage
@@ -1208,136 +988,6 @@ if (IsLocal || IsLiveTests) {
             insetIconURL: turbowarpIcon,
             iconURL: twIcon,
             description: 'Weird new blocks. Replaced by Sensing Expansion.',
-            featured: true
-        },
-        {
-            name: 'the doo doo extension',
-            extensionId: 'jgDooDoo',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'joke'],
-            description: 'dr bob eae',
-            featured: true
-        },
-        {
-            name: 'Christmas',
-            extensionId: 'jgChristmas',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.png',
-            tags: ['penguinmod', 'joke'],
-            description: 'hooraye',
-            featured: true
-        },
-        {
-            name: 'an amazing extension',
-            extensionId: 'jgBestExtension',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epic.png',
-            internetConnectionRequired: true,
-            tags: ['penguinmod', 'joke'],
-            description: 'this is SUCH A GOOD EXTENSION USE IT NOW',
-            featured: true
-        },
-        {
-            name: 'Epic utilities',
-            extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/AprilFools.js',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.png',
-            tags: ['penguinmod', 'joke'],
-            description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
-            featured: true
-        },
-        {
-            name: 'image blocks',
-            extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.png',
-            tags: ['penguinmod', 'joke'],
-            internetConnectionRequired: true,
-            description: 'who needs cat blocks when you have penguin block',
-            extDeveloper: 'Ashimee, 0znzw, CST1229',
-            featured: true
-        },
-        {
-            name: 'fire in the hole',
-            extensionId: 'https://extensions.penguinmod.com/extensions/JeremyGamer13/FireInTheHole.js',
-            iconURL: 'https://library.penguinmod.com/files/emojis/cluelesssmile.png',
-            tags: ['penguinmod', 'joke'],
-            internetConnectionRequired: true,
-            description: 'april fools took too long man this joke is not funny anymore',
-            featured: true
-        },
-        {
-            name: 'Unite',
-            extensionId: 'jwUnite',
-            iconURL: jwUniteExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Legacy extension that was eventually merged into the default toolbox.',
-            featured: true
-        },
-        {
-            name: 'XML',
-            extensionId: 'jwXml',
-            iconURL: jwXmlExtensionIcon,
-            tags: ['penguinmod', 'datamgmt'],
-            description: 'Enables the creation and getting of XML data. Not yet able to modify data.',
-            extDeveloper: 'jwklong',
-            featured: true
-        },
-        {
-            name: 'Debugging',
-            extensionId: 'jgDebugging',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Log information and run commands. Good for debugging packaged projects or just easily changing things.',
-            featured: true
-        },
-        {
-            name: 'Test Extension Loader',
-            href: 'https://studio.penguinmod.com/loadExt.html',
-            extensionId: 'special_testExtensionLibrary',
-            iconURL: defaultExtensionIcon,
-            description: 'Test loading extensions from a library. For developers.',
-            featured: true
-        },
-        {
-            name: 'Editor',
-            href: 'https://studio.penguinmod.com/editor.html',
-            extensionId: 'special_editorExtensionLibrary',
-            iconURL: penguinmodLibraryExtensionIcon,
-            description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
-            featured: true
-        },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="OOP"
-                    description="Name of OOP extension"
-                    id="jwStructs.jwStructsExtension.name"
-                />
-            ),
-            extensionId: 'jwStructs',
-            tags: ['penguinmod'],
-            iconURL: jwStructsExtensionIcon,
-            description: (
-                <FormattedMessage
-                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
-                    description="Description of OOP extension"
-                    id="jwStructs.jwStructsExtension.description"
-                />
-            ),
-            featured: true
-        },
-        {
-            name: 'PenguinMod Permissions',
-            extensionId: 'JgPermissionBlocks',
-            iconURL: jgPermissionExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Legacy extension, old blocks no longer serve a real purpose. Direct blocks to manage permissions that PenguinMod requires you have to do certain tasks.',
-            featured: true
-        },
-        {
-            name: 'Jeremys Dev Tools',
-            extensionId: 'jgDev',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
-            credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
             featured: true
         },
         {
@@ -1370,15 +1020,7 @@ if (IsLocal || IsLiveTests) {
             description: 'In development. May break compatibility. Allow players to really jump into your world!',
             featured: true
         },
-        {
-            name: 'Interfaces',
-            extensionId: 'jgInterfaces',
-            iconURL: jgsilvxrcatInterfacesExtensionIcon,
-            credits: 'silvxrcat',
-            tags: ['penguinmod'],
-            description: 'In development.',
-            featured: true
-        },
+       
         {
             name: 'Packager Applications',
             extensionId: 'jgPackagerApplications',
@@ -1417,23 +1059,6 @@ if (IsLocal || IsLiveTests) {
                     id="jgPathfinding.Pathfinding.description"
                 />
             ),
-            featured: true
-        },
-        {
-            name: 'Animation',
-            extensionId: 'jgAnimation',
-            iconURL: jgAnimationExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'In development. Currently buggy and missing features.',
-            featured: true
-        },
-        {
-            name: 'Virtual Reality',
-            extensionId: 'jgVr',
-            iconURL: jgVrExtensionIcon,
-            tags: ['penguinmod', 'hardware'],
-            description: 'In development.',
-            credits: 'Vadik1',
             featured: true
         }
     ];
